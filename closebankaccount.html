@@ -7,50 +7,30 @@
 </head>
 
 <body>
-    <header>
-        <h1>Customer Information</h1>
-    </header>
     <main>
         <section class="grid-container">
             <div class="grid-item">
                 <div class="card">
-                    <h2>Customer Form</h2>
-                    <form>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="account-number">Account Number:</label>
-                        <input type="text" id="account-number" name="account-number" required>
-
-                        <label for="phone-number">Phone Number:</label>
-                        <input type="text" id="phone-number" name="phone-number" required>
-
-                        <label for="reason">Reason:</label>
-                        <textarea id="reason" name="reason" required></textarea>
-
-                        <button type="submit">Submit</button>
-                        
-                    </form>
-                </div>
-            </div>
-
-            <div class="grid-item">
-                <div class="card">
-                    <h2>Previously Closed Accounts</h2>
-                    <ul class="closed-accounts-list">
+                    <h2>Customer Requests to Close Bank Account</h2>
+                    <ul class="account-requests-list">
                         <li>
+                            <p>Name: John Doe</p>
                             <p>Account Number: 123456789</p>
-                            <p>Closed Date: January 10, 2023</p>
+                            <p>Reason: Moving to a different bank</p>
+                            <button type="submit">Approve</button>
                         </li>
                         <li>
+                            <p>Name: Jane Smith</p>
                             <p>Account Number: 987654321</p>
-                            <p>Closed Date: March 25, 2023</p>
+                            <p>Reason: Financial difficulties</p>
+                            <button type="submit">Approve</button>
                         </li>
                         <li>
+                            <p>Name: Michael Johnson</p>
                             <p>Account Number: 567891234</p>
-                            <p>Closed Date: April 5, 2023</p>
+                            <p>Reason: Relocating to a different country</p>
+                            <button type="submit">Approve</button>
                         </li>
-                        <!-- Add more dummy data of closed accounts as needed -->
                     </ul>
                 </div>
             </div>
