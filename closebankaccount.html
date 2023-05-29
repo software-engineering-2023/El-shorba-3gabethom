@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Customer Information</h1>
+    </header>
+    <main>
+        <section class="grid-container">
+            <div class="grid-item">
+                <div class="card">
+                    <h2>Customer Form</h2>
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="account-number">Account Number:</label>
+                        <input type="text" id="account-number" name="account-number" required>
+
+                        <label for="phone-number">Phone Number:</label>
+                        <input type="text" id="phone-number" name="phone-number" required>
+
+                        <label for="reason">Reason:</label>
+                        <textarea id="reason" name="reason" required></textarea>
+
+                        <button type="submit">Submit</button>
+                        
+                    </form>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="card">
+                    <h2>Previously Closed Accounts</h2>
+                    <ul class="closed-accounts-list">
+                        <li>
+                            <p>Account Number: 123456789</p>
+                            <p>Closed Date: January 10, 2023</p>
+                        </li>
+                        <li>
+                            <p>Account Number: 987654321</p>
+                            <p>Closed Date: March 25, 2023</p>
+                        </li>
+                        <li>
+                            <p>Account Number: 567891234</p>
+                            <p>Closed Date: April 5, 2023</p>
+                        </li>
+                        <!-- Add more dummy data of closed accounts as needed -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
