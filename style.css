@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #0B2940;
+    color: #fff;
+    padding: 10px;
+}
+
+main {
+  
+  justify-content: center;
+  align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-item {
+    padding: 1px;
+}
+
+.icon {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+.icon h2 {
+    margin-top: 0;
+}
+
+.icon form {
+    margin-top: 20px;
+}
+
+.icon label {
+    padding-top: 10px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.icon input[type="text"],
+.icon input[type="number"],
+.icon input[type="password"],
+.icon select,
+.icon textarea {
+    padding: 5px;
+    border: 1px solid #0B2940;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.icon select {
+    padding: 5px 30px 5px 5px;
+}
+
+.icon button[type="submit"] {
+    padding: 10px;
+    background-color: #0B2940;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-top: 8px;
+
+}
+
+.icon button[type="submit"]:hover {
+    background-color: #0B2940;
+}
+
+.icon input[type="file"] {
+    padding: 5px;
+}
+
+.icon textarea {
+    height: 100px;
+}
