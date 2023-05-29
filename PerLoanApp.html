@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Personal Loan Appliction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Personal Loan Request</h1>
+    </header>
+    <main>
+        <section class="grid-container">
+
+
+    <div class="grid-item">
+        <div class="icon">
+
+        <form>
+        <div>
+        <label for="name">Full name:</label>
+
+       <input type="text" id="name" name="name" required> 
+</div>  
+    <br>
+    <div>
+        <label for="IdNum">Identity Number:</label>
+        <input type="number" id="IdNum" name="ID" min = "10000000000000" max = "99999999999999" oninvalid="this.setCustomValidity('Enter a 14 digit number')"
+       oninput="this.setCustomValidity('')"/> 
+    </div>
+    <br>
+    <div>
+        <label for="Num">Mobile Number:</label>
+
+       <input type="tel" id="Num" name="Num" required placeholder="00201010664499">
+
+    </div>
+    <br>
+    <div>
+        <label for="Email">Email:</label>
+
+       <input type="email" id="Email" name="Email" required> 
+    </div>
+    <br>
+    <div>
+        <label for="City">City:</label>
+
+       <input type="text" id="City" name="City" required> 
+    </div>
+    <br>
+    <div>
+        <label for="Purpouse"> Purpouse:</label>
+
+       <input type="text" id="Purpouse" name="Purpouse" > 
+    </div>
+    <br>
+    <div>
+        <button id="Loan" type = "submit">
+        submit
+        </button>
+    </div>
+    </form>
+    </div>
+</div>
+</section>
+</main>
+</body>
+</html>   
+
