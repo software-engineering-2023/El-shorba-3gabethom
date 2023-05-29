@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Your account Info</title>
+    <link rel="stylesheet" href="../CSS/account.CSS">
+    <link rel="stylesheet" href="../CSS/notification.css">
+</head>
+
+<body>
+    <nav>
+        <h1 class="accounttxt"> Account</h1>
+        <div class="logo"></div>
+        <div class="icon" onclick="toggleNotifi()">
+            <img src="../photos/bell.png" alt="img"> <span>4</span>
+        </div>
+        <div class="notifi-box card" id="box">
+            <h2>Notifications <span>4</span></h2>
+            <div class="notifi-item">
+                <img src="../photos/avatar1.png" alt="img">
+                <div class="text">
+                    <h4>Taha</h4>
+                    <p class="Reminderdes">Send you 1000$ for rent.</p>
+                </div>
+            </div>
+
+            <div class="notifi-item">
+                <img src="../photos/avatar2.png" alt="img">
+                <div class="text">
+                    <h4>Zalata</h4>
+                    <p class="Reminderdes">Send you 200$ for dinner.</p>
+                </div>
+            </div>
+            <div class="notifi-item">
+                <img src="../photos/gas_station.avif" alt="img">
+                <div class="text">
+                    <h4>Reminder for gas bill</h4>
+                    <p class="Reminderdes">Bill payment on May 31 at 11:00 AM.</p>
+                </div>
+            </div>
+
+            <div class="notifi-item">
+                <img src="../photos/electricityBill.jpg" alt="img">
+                <div class="text">
+                    <h4>Reminder for electricity bill</h4>
+                    <p class="Reminderdes">Bill payment on May 31 at 3:00 PM.</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="grid-container">
+            <div class="grid-item">
+                <div class="card">
+                    <h2>Account Summary</h2>
+                    <form>
+                        <p>Account Balance: $5000</p>
+                        <br>
+                        <p>Recent Transactions:</p>
+
+                        <ul>
+                            <li> Withdrawal: $1000</li>
+                            <li> Transfer: $200</li>
+                        </ul>
+                        <button type="submit" id="showmore">Show more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <h2>Create Account</h2>
+                    <form>
+                        <label>Select Account Type:</label>
+                        <select id="account-type" name="account-type">
+                            <option value="checking">Checking Account</option>
+                            <option value="savings">Savings Account</option>
+                        </select>
+                        <label>Initial Deposit:</label>
+                        <input type="number" id="initial-deposit" name="initial-deposit">
+                        <button type="submit">Create Account</button>
+                    </form>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <h2>Money Transfer</h2>
+                    <form>
+                        <label>Transfer Amount:</label>
+                        <input type="number" id="initial-deposit" name="initial-deposit">
+                        <label>Recipient Account:</label>
+                        <input type="number" id="initial-deposit" name="initial-deposit">
+                        <button type="submit">Transfer</button>
+                    </form>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <h2>Pay Bill</h2>
+                    <form>
+                        <label>Bill Amount:</label>
+                        <input type="number" id="credit-limit" name="credit-limit">
+                        <label>Select Payee::</label>
+                        <select id="credit-type" name="credit-type">
+                            <option value="gas">gas</option>
+                            <option value="water">water</option>
+                            <option value="electricity">electricity</option>
+                            <option value="telephone">telephone</option>
+                        </select>
+                    </form>
+                    <button type="submit">Pay</button>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <h2>Bill Reminder</h2>
+                    <form>
+                        <label for="bill-type">Bill Type:</label>
+                        <select id="bill-type" name="bill-type">
+                            <option value="gas">Gas</option>
+                            <option value="electricity">Electricity</option>
+                            <option value="water">Water</option>
+                            <option value="telephone">Telephone</option>
+                        </select>
+                        <br>
+                        <label for="due-date">Due Date:</label>
+                        <input type="date" id="due-date" name="due-date">
+                        <br>
+                        <label for="due-hour">Due Hour:</label>
+                        <input type="time" id="due-hour" name="due-hour">
+                        <br>
+                        <button type="submit">Set Reminder</button>
+                    </form>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <h2>Password Change</h2>
+                    <form>
+                        <label>Current Password:</label>
+                        <input type="password" id="current-password" name="current-password">
+                        <label>New Password:</label>
+                        <input type="password" id="new-password" name="new-password">
+                        <label>Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                        <button type="submit">Change Password</button>
+                    </form>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <h2>Change Mobile Number</h2>
+                    <form>
+                        <label>New Mobile Number:</label>
+                        <input type="text" id="new-mobile-number" name="new-mobile-number">
+                        <button type="submit">Update</button>
+                    </form>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <h2>Close Account</h2>
+                    <form>
+                        <label>Are you sure you want to close your account?</label>
+                        <input type="checkbox" id="close-confirm" name="close-confirm">
+                        <button type="submit">Close Account</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="card">
+                    <h2>Logout</h2>
+                    <form>
+                        <button type="submit">Logout</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        var box = document.getElementById('box');
+        var down = false;
+        function toggleNotifi() {
+            if (down) {
+                box.style.height = '0px';
+                box.style.opacity = 0;
+                down = false;
+            } else {
+                box.style.height = '400px';
+                box.style.opacity = 1;
+                down = true;
+            }
+        }
+        const button = document.getElementById("showmore");
+        const url = "table.html";
+        button.addEventListener("click", () => {
+            window.open(url, "_blank");
+        });
+    </script>
+</body>
+</html>
