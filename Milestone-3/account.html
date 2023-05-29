@@ -3,14 +3,14 @@
 
 <head>
     <title>Your account Info</title>
-    <link rel="stylesheet" href="../CSS/account.CSS">
-    <link rel="stylesheet" href="../CSS/notification.css">
+    <link rel="stylesheet" href="account.CSS">
+    <link rel="stylesheet" href="notification.css">
 </head>
 
 <body>
     <nav>
         <h1 class="accounttxt"> Account</h1>
-        <div class="logo"></div>
+        <!--<div class="logo"></div>
         <div class="icon" onclick="toggleNotifi()">
             <img src="../photos/bell.png" alt="img"> <span>4</span>
         </div>
@@ -44,7 +44,7 @@
                 <div class="text">
                     <h4>Reminder for electricity bill</h4>
                     <p class="Reminderdes">Bill payment on May 31 at 3:00 PM.</p>
-                </div>
+                </div>-->
             </div>
         </div>
     </nav>
@@ -89,6 +89,13 @@
                         <input type="number" id="initial-deposit" name="initial-deposit">
                         <label>Recipient Account:</label>
                         <input type="number" id="initial-deposit" name="initial-deposit">
+                        <label>Select Type:</label>
+                        <select id="account-type" name="account-type">
+                            <option value="checking">Internal</option>
+                            <option value="savings">Domestic</option>
+                            <option value="savings">International</option>
+
+                        </select>
                         <button type="submit">Transfer</button>
                     </form>
                 </div>

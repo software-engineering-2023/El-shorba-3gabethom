@@ -123,7 +123,7 @@ html{
     display: flex;
     position: fixed; 
     justify-content: space-between;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .navbar-bottom.sticky{
     padding: 15px 95px;
@@ -205,6 +205,64 @@ html{
     color: #0A2940;
 }
 
+.dropdown {
+    direction:rtl;
+    float: right;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    direction: rtl;
+
+
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(70, 89, 133);
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    /*direction:ltr;*/
+    direction:ltr;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    direction:rtl;
+
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
 /* Showcase-content Section styling */
 .showcase .showcase-content{
     max-width: 850px;
@@ -271,58 +329,6 @@ html{
 }
 #services .items .item:hover h3{
     color: #f4f4f4;
-}
-#goal{
-    display: flex;
-    padding-top: 20px;
-}
-#goal div{
-    flex: 1;
-}
-#goal .goal-img{
-    display: inline-block;
-    position: relative;
-    width: 600px;
-    height: 380px;
-    overflow: hidden;
-}
-#goal .goal-img img{
-    width: auto;
-    height: 100%;
-    object-fit: cover;
-}
-#goal .goal-text{
-    margin: 0 40px;
-}
-#goal .goal-text a{
-    color: #f4f4f4;
-    background: #55BA53;
-    text-decoration: none;
-    font-size: 12px;
-    border: 1px solid #55BA53;
-    border-radius: 25px;
-    padding: 3px 10px;
-    transition: 0.5s;
-}
-#goal .goal-text a:hover{
-    color: #55BA53;
-    background: #0A2940;
-}
-#goal .goal-text h2{
-    margin: 20px 0;
-    color: #0A2940;
-}
-#goal .goal-text .contents{
-    display: flex;
-}
-#goal .goal-text .contents .content{
-    flex: none;
-    padding: 10px;
-}
-#goal .goal-text .contents .content h3{
-    font-size: 16px;
-    padding-bottom: 5px;
-    color: #55BA53;
 }
 
 
