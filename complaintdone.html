@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Success Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .message {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .form-text {
+      margin-bottom: 10px;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="message">Complaint submitted successfully!</p>
+    <p class="form-text">Would you like to fill a form to replace your card?</p>
+    <div class="button-container">
+        <div class="grid-item">
+            <div class="card">
+                <button id="button10" type="submit">Main Menu</button>
+                <button id="button11" type="submit">Replace Card</button>
+            </div>
+        </div>
+     
+    </div>
+    <script>
+      button10.onclick = function() {
+        window.location.href = "index.html";
+      };
+
+      button11.onclick = function() {
+        window.location.href = "replacementform.html";
+      };
+    </script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #0B2940;
+  color: #fff;
+  padding: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.grid-item {
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card form {
+  margin-top: 20px;
+}
+
+.card label {
+  padding-top: 10px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.card input[type="text"],
+.card input[type="number"],
+.card input[type="password"],
+.card select,
+.card textarea {
+  padding: 5px;
+  border: 1px solid #0B2940;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.card select {
+  padding: 5px 30px 5px 5px;
+}
+
+.card button[type="submit"] {
+  padding: 10px;
+  background-color: #0B2940;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-top: 8px;
+
+}
+
+.card button[type="submit"]:hover {
+  background-color: #0B2940;
+}
+
+.card input[type="file"] {
+  padding: 5px;
+}
+
+.card textarea {
+  height: 100px;
+}

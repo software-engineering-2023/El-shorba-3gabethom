@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Replacement Application</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .header {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .attribute {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .attribute label {
+      margin-right: 10px;
+    }
+
+    .submit-button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="header">Replacement Application</h2>
+    <div class="attribute">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="attribute">
+      <label for="account-number">Account Number:</label>
+      <input type="text" id="account-number" name="account-number" required>
+    </div>
+    <div class="attribute">
+      <label for="lost-card-number">Lost Credit Card Number:</label>
+      <input type="text" id="lost-card-number" name="lost-card-number" required>
+    </div>
+    <div class="grid-item">
+        <div class="card">
+            <button id="button12" type="submit">Submit</button>
+        </div>
+    </div>
+    <script>
+        button12.onclick = function() {
+          window.location.href = "complaintsubmitted.html";
+        };
+    </script>
+  </div>
+</body>
+</html>
